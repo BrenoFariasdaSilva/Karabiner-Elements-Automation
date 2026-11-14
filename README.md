@@ -8,7 +8,8 @@
   
 ---
 
-Project-Description.
+Install Karabiner-Elements on macOS, register custom complex modifications, and automatically enable them in the selected profile.
+Independent project, not affiliated with Karabiner-Elements or Homebrew
   
 ---
 
