@@ -49,6 +49,7 @@ Independent project, not affiliated with Karabiner-Elements or Homebrew
     - [Option C: Makefile](#option-c-makefile)
   - [How the installer works](#how-the-installer-works)
   - [Included Rules](#included-rules)
+  - [CLI and customization](#cli-and-customization)
   - [How to Cite?](#how-to-cite)
   - [Contributing](#contributing)
   - [Collaborators](#collaborators)
@@ -145,6 +146,33 @@ Source file: [`rules/safari-command-backtick-switch-windows.json`](rules/safari-
 | Any application, `Command + Tab` | Unchanged: macOS application switching |
 
 The shortcut is a workaround for the specific situation where **Command + Shift + backtick works natively** but **Command + backtick does not**. It does not cycle Safari tabs. With three or more windows, the direction of the cycle is reversed. If your physical layout reports a different key code, check `grave_accent_and_tilde` in Karabiner-EventViewer before changing the rule.
+
+## CLI and customization
+
+```bash
+# Validate source JSON rules (no machine changes)
+python3 scripts/manage_rules.py validate
+
+# Preview what would change, without writes
+python3 scripts/manage_rules.py install --dry-run
+
+# Activate all repository-managed rules without installing Karabiner
+python3 scripts/manage_rules.py install
+
+# Activate in a named profile
+python3 scripts/manage_rules.py install --profile "My Profile"
+
+# Inspect active rules and imported preset files
+python3 scripts/manage_rules.py status
+
+# Remove only managed rules and imported preset files
+python3 scripts/manage_rules.py remove
+
+# Explicitly replace unknown rules intercepting the same Safari shortcut
+python3 scripts/manage_rules.py install --replace-conflicts
+```
+
+The macOS installer accepts `--dry-run`, `--skip-app`, `--no-open`, `--profile NAME`, and `--replace-conflicts`. The Python tool additionally accepts `--config`, `--assets-dir`, `--backup-dir`, and `--rules-dir`, used by tests and advanced users.
 
 ## How to Cite?
 
