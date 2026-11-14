@@ -187,15 +187,15 @@ Run `make check`, then `bash install.command --dry-run` and `bash install.comman
 
 ## How to Cite?
 
-If you use the Repository-Name in your research, please cite it using the following BibTeX entry:
+If you use the Karabiner-Elements-Automation in your research, please cite it using the following BibTeX entry:
 
 ```
-@misc{softwareRepository-Name:2024,
-  title = {Repository-Name: Project-Description},
+@misc{softwareKarabiner-Elements-Automation:2026,
+  title = {Karabiner-Elements-Automation: automatically import karabiner saved rules},
   author = {Breno Farias da Silva},
-  year = {2024},
-  howpublished = {https://github.com/BrenoFariasdaSilva/Repository-Name},
-  note = {Accessed on September 11, 2024}
+  year = {2026},
+  howpublished = {https://github.com/BrenoFariasdaSilva/Karabiner-Elements-Automation},
+  note = {Accessed on November 14, 2026}
 }
 ```
 
