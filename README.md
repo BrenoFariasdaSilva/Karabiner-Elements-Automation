@@ -63,7 +63,12 @@ The supplied ZIP is a new, standalone repository ready for you to publish on Git
 
 ## Requirements
 
-Bullet points of the requirements.
+- macOS (Apple Silicon or Intel), internet access for first-time software installation.
+- Standard user account; install without `sudo`.
+- Permission to approve software installation and Karabiner's macOS security dialogs.
+- Python 3 for rule management (automatically installed if absent).
+
+**Important macOS limitation:** Background Services, Accessibility, and Driver Extension approvals require user interaction in System Settings. No installer can legitimately bypass these protected permissions.
 
 ## Setup
 
