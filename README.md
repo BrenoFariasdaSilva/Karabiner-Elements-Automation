@@ -43,12 +43,10 @@ Independent project, not affiliated with Karabiner-Elements or Homebrew
   - [Requirements](#requirements)
   - [Setup](#setup)
     - [Clone the repository](#clone-the-repository)
-  - [Installation:](#installation)
-  - [Run Programing Language Code:](#run-programing-language-code)
-    - [Dependencies](#dependencies)
-    - [Dataset - Optional](#dataset---optional)
-  - [Usage](#usage)
-  - [Results - Optional](#results---optional)
+  - [Quick start](#quick-start)
+    - [Option A: Finder](#option-a-finder)
+    - [Option B: Terminal](#option-b-terminal)
+    - [Option C: Makefile](#option-c-makefile)
   - [How to Cite?](#how-to-cite)
   - [Contributing](#contributing)
   - [Collaborators](#collaborators)
@@ -81,60 +79,42 @@ The supplied ZIP is a new, standalone repository ready for you to publish on Git
    cd Karabiner-Elements-Automation
    ```
 
-## Installation:
+## Quick start
 
-* Programing Language:
+### Option A: Finder
 
-  * Manually:
-      ```bash
-      # Programing Language:
-      sudo apt install program-language -y
-      ```
+1. Download and extract the ZIP.
+2. Open the resulting `Karabiner-Elements-Automation` folder.
+3. Double-click **`install.command`**. If macOS blocks downloaded scripts, use Option B rather than disabling Gatekeeper.
+4. If asked, approve installation of Homebrew through its official installer.
+5. Finish Karabiner's on-screen setup (background services, Accessibility, Driver Extension, and keyboard layout).
+6. Open the two Safari windows (e.g., Personal and Teacher) and press **Command + backtick** (`⌘ + \``).
 
-  * Using Makefile:
-      ```bash
-      make install
-      ```
+### Option B: Terminal
 
-  * Using ShellScript:
-      ```bash
-      chmod +x install.sh
-      sudo ./install.sh
-      ```  
-
-## Run Programing Language Code:
+From inside the extracted folder:
 
 ```bash
-# Command here 
+bash install.command --dry-run
+bash install.command
 ```
 
-### Dependencies
-
-1. Install the project dependencies with the following command:
-
-   ```bash
-   make dependencies
-   ```
-
-### Dataset - Optional
-
-1. Download the dataset from [WEBSITE-HERE]() and place it in this project directory `(/Karabiner-Elements-Automation)` and run the following command:
-
-   ```bash
-   make dataset
-   ```
-
-## Usage
-
-In order to run the project, run the following command:
+To enter that directory first (if extracted under Downloads):
 
 ```bash
-make run
+cd ~/Downloads/Karabiner-Elements-Automation
 ```
 
-## Results - Optional
+### Option C: Makefile
 
-Discuss the results obtained in the project.
+```bash
+make dry-run
+make install
+make status
+make check
+```
+
+The default installer skips the app installation if Karabiner-Elements is already present. It never runs the rule manager with `sudo`.
 
 ## How to Cite?
 
