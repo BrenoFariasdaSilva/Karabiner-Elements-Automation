@@ -1,0 +1,10 @@
+Karabiner-Elements-Automation
+Copyright 2026 Breno Farias da Silva
+
+The repository layout and selected reusable artwork were adapted from
+https://github.com/BrenoFariasdaSilva/Template-Project by the same author.
+
+Karabiner-Elements is a separate project by pqrs-org and is not included
+in this repository. Homebrew is a separate third-party package manager.
+This project is not affiliated with, endorsed by, or maintained by pqrs-org
+or Homebrew.
