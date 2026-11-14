@@ -50,6 +50,7 @@ Independent project, not affiliated with Karabiner-Elements or Homebrew
   - [How the installer works](#how-the-installer-works)
   - [Included Rules](#included-rules)
   - [CLI and customization](#cli-and-customization)
+    - [Adding more rules](#adding-more-rules)
   - [How to Cite?](#how-to-cite)
   - [Contributing](#contributing)
   - [Collaborators](#collaborators)
@@ -173,6 +174,16 @@ python3 scripts/manage_rules.py install --replace-conflicts
 ```
 
 The macOS installer accepts `--dry-run`, `--skip-app`, `--no-open`, `--profile NAME`, and `--replace-conflicts`. The Python tool additionally accepts `--config`, `--assets-dir`, `--backup-dir`, and `--rules-dir`, used by tests and advanced users.
+
+### Adding more rules
+
+Create `rules/my-new-rule.json` using the **Add your own rule** format (top-level `description` and `manipulators`), and append this entry to `rules/manifest.json`:
+
+```json
+{"id": "my-new-rule", "file": "my-new-rule.json"}
+```
+
+Run `make check`, then `bash install.command --dry-run` and `bash install.command --skip-app`. A generated predefined file lets the rule appear under **Complex Modifications → Add predefined rule**, in addition to being activated automatically.
 
 ## How to Cite?
 
