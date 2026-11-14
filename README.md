@@ -48,6 +48,7 @@ Independent project, not affiliated with Karabiner-Elements or Homebrew
     - [Option B: Terminal](#option-b-terminal)
     - [Option C: Makefile](#option-c-makefile)
   - [How the installer works](#how-the-installer-works)
+  - [Included Rules](#included-rules)
   - [How to Cite?](#how-to-cite)
   - [Contributing](#contributing)
   - [Collaborators](#collaborators)
@@ -129,6 +130,21 @@ The default installer skips the app installation if Karabiner-Elements is alread
 8. Saves generated *predefined-rule* wrappers in the documented assets directory and opens Karabiner Settings.
 
 Karabiner-Elements normally automatically reloads changes to its main configuration file. The installer does **not** need to paste text into Karabiner's editor or simulate mouse clicks.
+
+## Included Rules
+
+Source file: [`rules/safari-command-backtick-switch-windows.json`](rules/safari-command-backtick-switch-windows.json)
+
+**Safari Only: Command+Backtick switches windows via Command+Shift+Backtick.**
+
+| Context | Behavior |
+|---|---|
+| Safari, `Command + backtick` | Sends `Command + Shift + backtick` to switch Safari windows |
+| Safari, `Command + Shift + backtick` | Keeps the native reverse window-switch shortcut |
+| VS Code, `Command + backtick` | Unchanged, because the rule matches Safari only |
+| Any application, `Command + Tab` | Unchanged: macOS application switching |
+
+The shortcut is a workaround for the specific situation where **Command + Shift + backtick works natively** but **Command + backtick does not**. It does not cycle Safari tabs. With three or more windows, the direction of the cycle is reversed. If your physical layout reports a different key code, check `grave_accent_and_tilde` in Karabiner-EventViewer before changing the rule.
 
 ## How to Cite?
 
