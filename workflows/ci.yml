@@ -1,0 +1,23 @@
+name: Validate
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  checks:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate rules
+        run: python3 scripts/manage_rules.py validate
+      - name: Unit tests
+        run: python3 -m unittest discover -s tests -v
+      - name: Bash syntax
+        run: bash -n install.command uninstall.command
