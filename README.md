@@ -47,6 +47,7 @@ Independent project, not affiliated with Karabiner-Elements or Homebrew
     - [Option A: Finder](#option-a-finder)
     - [Option B: Terminal](#option-b-terminal)
     - [Option C: Makefile](#option-c-makefile)
+  - [How the installer works](#how-the-installer-works)
   - [How to Cite?](#how-to-cite)
   - [Contributing](#contributing)
   - [Collaborators](#collaborators)
@@ -115,6 +116,19 @@ make check
 ```
 
 The default installer skips the app installation if Karabiner-Elements is already present. It never runs the rule manager with `sudo`.
+
+## How the installer works
+
+1. Verifies the operating system and normal-user execution.
+2. Finds Karabiner-Elements; if missing, installs it using Homebrew Cask.
+3. Finds Python 3; if missing, installs it using Homebrew.
+4. Reads and validates the source rules listed in `rules/manifest.json`. When available, it also runs the installed Karabiner CLI linter on generated predefined files before activating them.
+5. Reads `~/.config/karabiner/karabiner.json` and identifies the selected profile, or creates a minimal initial configuration if none exists.
+6. Checks for conflicts, and preserves unrecognized rules by default.
+7. Makes verified backups before modifying existing files, then inserts the rules into `profiles[].complex_modifications.rules`.
+8. Saves generated *predefined-rule* wrappers in the documented assets directory and opens Karabiner Settings.
+
+Karabiner-Elements normally automatically reloads changes to its main configuration file. The installer does **not** need to paste text into Karabiner's editor or simulate mouse clicks.
 
 ## How to Cite?
 
