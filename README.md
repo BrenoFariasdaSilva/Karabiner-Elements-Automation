@@ -57,7 +57,9 @@ Independent project, not affiliated with Karabiner-Elements or Homebrew
 
 ## Introduction
 
-Detailed project description.
+This repository provides a macOS bootstrapper and a dependency-free Python rule manager for [Karabiner-Elements](https://karabiner-elements.pqrs.org/). It turns **install Karabiner → import a custom JSON rule → enable the rule** into a repeatable operation without replacing unrelated user settings.
+
+The supplied ZIP is a new, standalone repository ready for you to publish on GitHub; it does **not** create a remote repository or modify your existing projects.
 
 ## Requirements
 
