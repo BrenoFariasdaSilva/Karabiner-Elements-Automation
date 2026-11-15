@@ -27,7 +27,6 @@ Independent project, not affiliated with Karabiner-Elements or Homebrew
 ![GitHub Contributors](https://img.shields.io/github/contributors/BrenoFariasdaSilva/Karabiner-Elements-Automation)
 ![GitHub Created At](https://img.shields.io/github/created-at/BrenoFariasdaSilva/Karabiner-Elements-Automation)
 ![wakatime](https://wakatime.com/badge/github/BrenoFariasdaSilva/Karabiner-Elements-Automation.svg)
-[![GitHub Repository Size](https://img.shields.io/github/repo-size/BrenoFariasdaSilva/Karabiner-Elements-Automation)](https://github.com/BrenoFariasdaSilva/Karabiner-Elements-Automation)
 [![Open Issues](https://img.shields.io/github/issues/BrenoFariasdaSilva/Karabiner-Elements-Automation)](https://github.com/BrenoFariasdaSilva/Karabiner-Elements-Automation/issues)
 [![Closed Issues](https://img.shields.io/github/issues-closed/BrenoFariasdaSilva/Karabiner-Elements-Automation)](https://github.com/BrenoFariasdaSilva/Karabiner-Elements-Automation/issues?q=is%3Aissue+is%3Aclosed)
 [![Open Pull Requests](https://img.shields.io/github/issues-pr/BrenoFariasdaSilva/Karabiner-Elements-Automation)](https://github.com/BrenoFariasdaSilva/Karabiner-Elements-Automation/pulls)
