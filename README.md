@@ -27,21 +27,6 @@ Independent project, not affiliated with Karabiner-Elements or Homebrew
 ![GitHub Contributors](https://img.shields.io/github/contributors/BrenoFariasdaSilva/Karabiner-Elements-Automation)
 ![GitHub Created At](https://img.shields.io/github/created-at/BrenoFariasdaSilva/Karabiner-Elements-Automation)
 ![wakatime](https://wakatime.com/badge/github/BrenoFariasdaSilva/Karabiner-Elements-Automation.svg)
-
-</div>
-
-<div align="center">
-
-![GitHub Code Size in Bytes](https://img.shields.io/github/languages/code-size/BrenoFariasdaSilva/Karabiner-Elements-Automation)
-![GitHub Commits](https://img.shields.io/github/commit-activity/t/BrenoFariasdaSilva/Karabiner-Elements-Automation/main)
-![GitHub Last Commit](https://img.shields.io/github/last-commit/BrenoFariasdaSilva/Karabiner-Elements-Automation)
-![GitHub Forks](https://img.shields.io/github/forks/BrenoFariasdaSilva/Karabiner-Elements-Automation)
-![GitHub Language Count](https://img.shields.io/github/languages/count/BrenoFariasdaSilva/Karabiner-Elements-Automation)
-![GitHub License](https://img.shields.io/github/license/BrenoFariasdaSilva/Karabiner-Elements-Automation)
-![GitHub Stars](https://img.shields.io/github/stars/BrenoFariasdaSilva/Karabiner-Elements-Automation)
-![GitHub Contributors](https://img.shields.io/github/contributors/BrenoFariasdaSilva/Karabiner-Elements-Automation)
-![GitHub Created At](https://img.shields.io/github/created-at/BrenoFariasdaSilva/Karabiner-Elements-Automation)
-![wakatime](https://wakatime.com/badge/github/BrenoFariasdaSilva/Karabiner-Elements-Automation.svg)
 [![GitHub Repository Size](https://img.shields.io/github/repo-size/BrenoFariasdaSilva/Karabiner-Elements-Automation)](https://github.com/BrenoFariasdaSilva/Karabiner-Elements-Automation)
 [![Open Issues](https://img.shields.io/github/issues/BrenoFariasdaSilva/Karabiner-Elements-Automation)](https://github.com/BrenoFariasdaSilva/Karabiner-Elements-Automation/issues)
 [![Closed Issues](https://img.shields.io/github/issues-closed/BrenoFariasdaSilva/Karabiner-Elements-Automation)](https://github.com/BrenoFariasdaSilva/Karabiner-Elements-Automation/issues?q=is%3Aissue+is%3Aclosed)
@@ -52,7 +37,6 @@ Independent project, not affiliated with Karabiner-Elements or Homebrew
 ![Platform](https://img.shields.io/badge/Platform-macOS-343a40)
 ![Configuration](https://img.shields.io/badge/Configuration-Karabiner%20Elements-287ae6)
 ![Automation](https://img.shields.io/badge/Automation-Python-3776AB)
-
 ![Repobeats Statistics](https://repobeats.axiom.co/api/embed/8c8ffd6ec959368176d8a1903348d0adfb99760f.svg)
 
 </div>
