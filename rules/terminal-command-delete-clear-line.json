@@ -1,0 +1,32 @@
+{
+  "description": "Terminal.app ONLY: Command+Delete clears entire Zsh input line (Ctrl+U)",
+  "manipulators": [
+    {
+      "type": "basic",
+      "from": {
+        "key_code": "delete_or_backspace",
+        "modifiers": {
+          "mandatory": [
+            "command"
+          ]
+        }
+      },
+      "to": [
+        {
+          "key_code": "u",
+          "modifiers": [
+            "left_control"
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "type": "frontmost_application_if",
+          "bundle_identifiers": [
+            "^com\\.apple\\.Terminal$"
+          ]
+        }
+      ]
+    }
+  ]
+}
